@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supermarket.yun.platform.slowloris.mapper.system.RoleMapper">
+    
+    <sql id="Base_Column_List">
+        r.id,
+        r.name,
+        r.code,
+        r.is_sys,
+        r.usable,
+        r.create_date,
+        r.update_date,
+        r.remarks,
+        r.del_flag
+    </sql>
+    
+    <!-- 通过用户ID角色 -->
+    <select id="findRoleByUserId" resultType="com.supermarket.yun.platform.slowloris.domain.system.Role">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_role r
+        LEFT JOIN sys_user_role ur on r.id=ur.role_id
+        WHERE ur.user_id= #{userId}
+    </select>
+
+
+</mapper>
