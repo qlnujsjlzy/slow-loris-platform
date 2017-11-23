@@ -3,7 +3,6 @@ var $parentNode = window.parent.document;
 function $childNode(name) {
     return window.frames[name]
 }
-
 //BEGIN PORTLET
 $(".portlet").each(function (index, element) {
     var me = $(this);

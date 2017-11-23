@@ -17,6 +17,9 @@ function createDialog(title, url, gridid, width, height) {
 }
 
 
+
+
+
 /**
  * 更新事件打开窗口
  * @param title 编辑框标题
@@ -40,7 +43,7 @@ function update(title, url, gridId, width, height) {
         top.layer.alert('只能选择一条数据!', {icon: 0, title: '警告'});
         return;
     }
-
+    
     var id = rowsData[0];
     url = url.replace("{id}", id);
     openDialog(title, url, gridId, width, height);
@@ -69,7 +72,7 @@ function updateDialog(title, url, gridId, width, height) {
         top.layer.alert('只能选择一条数据!', {icon: 0, title: '警告'});
         return;
     }
-
+    
     var id = rowsData[0];
     url = url.replace("{id}", id);
     openDialog(title, url, gridId, width, height);
@@ -172,7 +175,7 @@ function openDialog(title, url, gridId, width, height) {
 
         }
     });
-
+	
 }
 
 /**
@@ -361,7 +364,7 @@ function search(gridId) {
     //传入查询条件参数  
     $("#" + gridId).jqGrid('setGridParam', {
         datatype: 'json',
-        postData: queryParams, //发送数据  
+        postData: queryParams, //发送数据
         page: 1
     }).trigger("reloadGrid"); //重新载入    
 }
@@ -420,6 +423,11 @@ function openDialogDetail(title, url, width, height) {
         }
     });
 }
+
+
+
+
+
 
 
 /***行內操作的一些内置方法*/

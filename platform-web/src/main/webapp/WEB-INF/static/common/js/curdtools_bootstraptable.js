@@ -1,6 +1,6 @@
 ﻿/**
  * 新增事件打开窗口
- *
+ * 
  * @param title
  *            编辑框标题
  * @param addurl//目标页面地址
@@ -11,7 +11,7 @@ function add(title, url, width, height, target) {
 
 /**
  * 更新事件打开窗口
- *
+ * 
  * @param title
  *            编辑框标题
  * @param addurl//目标页面地址
@@ -96,7 +96,7 @@ function openDialogView(title, url, width, height) {
 
 /**
  * 多记录刪除請求
- *
+ * 
  * @param title
  * @param url
  * @param gname
@@ -149,7 +149,7 @@ function deleteALLSelect(title, url, tableid) {
 
 /**
  * 多记录刪除請求
- *
+ * 
  * @param title
  * @param url
  * @param gname
@@ -191,7 +191,7 @@ function refreshTable(tableid) {
 
 /**
  * 查看详细事件打开窗口
- *
+ * 
  * @param title
  *            查看框标题
  * @param addurl//目标页面地址

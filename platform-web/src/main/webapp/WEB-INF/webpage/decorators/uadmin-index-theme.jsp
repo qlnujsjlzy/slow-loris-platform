@@ -5,7 +5,7 @@
 <html style="overflow-x:auto;overflow-y:auto;">
 <head>
     <title><sitemesh:title/>-<spring:message code="platform.copyright"/></title>
-    <%@include file="./include/list-header.jsp" %>
+    <%@include file="./default/list-header.jsp" %>
     <sitemesh:head/>
 </head>
 <body class="gray-bg">
@@ -29,6 +29,6 @@
         </div>
     </div>
 </div>
-<%@include file="./include/list-footer.jsp" %>
+<%@include file="./default/list-footer.jsp" %>
 </body>
 </html>

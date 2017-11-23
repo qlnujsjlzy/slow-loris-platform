@@ -7,19 +7,17 @@ function random(length) {
     }
     return rand;
 }
-
 //添加行数据
-function addRowData(gridId) { //创建一条空的记录，待编辑  
+function addRowData(gridId) { //创建一条空的记录，待编辑
     var gridObject = $('#' + gridId);
     //获取表格的初始model    
     var colModel = gridObject.jqGrid().getGridParam("colModel");
-    var dataRow = JSON.stringify(colModel);
+    var dataRow = JSON.stringify(colModel);   
     //var ids = gridObject.jqGrid('getDataIDs');    
     //如果jqgrid中没有数据 定义行号为1 ，否则取当前最大行号+1    
     var rowid = "insertrow" + random(6);
     gridObject.jqGrid("addRowData", rowid, dataRow, "last");
-}
-
+}  
 //删除行
 function delRowData(gridId) {
     var ids = [];

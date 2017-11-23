@@ -1,6 +1,6 @@
 package com.supermarket.yun.platform.slowloris.controller.tags.html;
 
-import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.text.StringEscapeUtils;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspTagException;

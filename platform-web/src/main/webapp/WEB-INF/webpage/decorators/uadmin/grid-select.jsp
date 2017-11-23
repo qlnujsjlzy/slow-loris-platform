@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
     <title><sitemesh:title/>-<spring:message code="platform.copyright"/></title>
     <%@include file="header.jsp" %>
@@ -14,7 +13,6 @@
         }
     </style>
 </head>
-
 <body>
 <div class="page-content">
     <div class="portlet box">

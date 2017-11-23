@@ -4,7 +4,7 @@ import com.supermarket.yun.platform.slowloris.common.utils.SpringContextHolder;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
 import com.supermarket.yun.platform.slowloris.controller.common.SysFunctions;
 import com.supermarket.yun.platform.slowloris.controller.tags.html.manager.HtmlComponentManager;
-import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.text.StringEscapeUtils;
 import org.springframework.web.servlet.tags.form.TagWriter;
 
 import javax.servlet.jsp.JspException;

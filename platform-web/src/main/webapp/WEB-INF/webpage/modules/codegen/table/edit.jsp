@@ -2,19 +2,16 @@
 <%@include file="/WEB-INF/webpage/common/taglibs.jspf" %>
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>表单设计</title>
-        <meta name="keywords" content="<spring:message code="sys.site.keywords" arguments="${platformName}"/>">
-        <meta name="description" content="<spring:message code="sys.site.description" arguments="${platformName}"/>">
-        <link rel="shortcut icon" href="${staticPath}/common/favicon.ico">
-        <html:css name="bootstrap,font-awesome,animate,iCheck,datepicker,jqgrid,sweetalert,Validform,jqgrid"/>
-        <link href="${staticPath}/common/css/style.css?v=4.1.0" rel="stylesheet">
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单设计</title>
+    <meta name="keywords" content="<spring:message code="sys.site.keywords" arguments="${platformName}"/>">
+    <meta name="description" content="<spring:message code="sys.site.description" arguments="${platformName}"/>">
+    <link rel="shortcut icon" href="${staticPath}/common/favicon.ico">
+    <html:css name="bootstrap,font-awesome,animate,iCheck,datepicker,jqgrid,sweetalert,Validform,jqgrid"/>
+    <link href="${staticPath}/common/css/style.css?v=4.1.0" rel="stylesheet">
+</head>
 
 <body class="white-bg">
 <div class="ibox-content">

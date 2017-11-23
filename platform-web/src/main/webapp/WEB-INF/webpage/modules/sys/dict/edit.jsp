@@ -5,7 +5,6 @@
 <head>
     <title><spring:message code="sys.dict.edittitle"/></title>
     <meta name="decorator" content="form"/>
-
 </head>
 
 <body class="white-bg" formid="dictForm">

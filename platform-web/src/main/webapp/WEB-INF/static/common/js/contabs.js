@@ -1,3 +1,4 @@
+
 $(function () {
     //通过遍历给菜单项加上data-index属性
     $(".J_menuItem").each(function (index) {
@@ -39,6 +40,7 @@ $(function () {
 });
 
 
+
 //计算元素集合的总宽度
 function calSumWidth(elements) {
     var width = 0;
@@ -47,7 +49,6 @@ function calSumWidth(elements) {
     });
     return width;
 }
-
 //滚动到指定选项卡
 function scrollToTab(element) {
     var marginLeftVal = calSumWidth($(element).prevAll()), marginRightVal = calSumWidth($(element).nextAll());
@@ -75,7 +76,6 @@ function scrollToTab(element) {
         marginLeft: 0 - scrollVal + 'px'
     }, "fast");
 }
-
 //查看左侧隐藏的选项卡
 function scrollTabLeft() {
     var marginLeftVal = Math.abs(parseInt($('.page-tabs-content').css('margin-left')));
@@ -107,7 +107,6 @@ function scrollTabLeft() {
         marginLeft: 0 - scrollVal + 'px'
     }, "fast");
 }
-
 //查看右侧隐藏的选项卡
 function scrollTabRight() {
     var marginLeftVal = Math.abs(parseInt($('.page-tabs-content').css('margin-left')));
@@ -139,6 +138,7 @@ function scrollTabRight() {
         }
     }
 }
+
 
 
 function menuItem() {
@@ -377,7 +377,7 @@ function openTab(url, title, isNew) {//isNew 为true时，打开一个新的选�
         // 添加选项卡
         top.$('.J_menuTabs .page-tabs-content').append(str);
         scrollToTab(top.$('.J_menuTab.active'));
-
+    	
     }
     return false;
 
