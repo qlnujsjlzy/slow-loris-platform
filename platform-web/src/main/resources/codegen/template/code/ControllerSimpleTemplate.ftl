@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.supermarket.yun.platform.slowloris.controller.common.BaseBeanController;
 import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
-
 import ${packageName}<#if moduleName?exists><#if moduleName!=''>.${moduleName}</#if></#if>.entity.${entityName?cap_first};
 
 /**

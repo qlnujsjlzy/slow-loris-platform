@@ -19,7 +19,7 @@ import ${importType};
 *
 */
 @TableName("${tableName}")
-
+@SuppressWarnings("serial")
 public class ${entityName?cap_first} extends AbstractEntity
 <String> {
 

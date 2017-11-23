@@ -71,7 +71,7 @@ return display("list");
 
 @RequestMapping(value = "ajaxList", method = { RequestMethod.GET, RequestMethod.POST })
 @PageableDefaults(sort = "id=desc")
-private void ajaxList(Queryable queryable, QueryPropertyPreFilter propertyPreFilterable, HttpServletRequest request,
+private void ajaxList(Queryable queryable, PropertyPreFilterable propertyPreFilterable, HttpServletRequest request,
 HttpServletResponse response) throws IOException {
 EntityWrapper<${entityName?cap_first}> entityWrapper = new EntityWrapper<${entityName?cap_first}>(entityClass);
 propertyPreFilterable.addQueryProperty("id");
