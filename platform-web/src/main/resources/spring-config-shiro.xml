@@ -7,14 +7,14 @@
           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
     
     <bean id="shiroCacheManager"
-          class="com.supermarket.yun.platform.slowloris.service.security.cache.SpringCacheManagerWrapper">
+          class="com.supermarket.yun.platform.slowloris.security.cache.SpringCacheManagerWrapper">
         <property name="cacheManager" ref="springCacheManager"/>
     </bean>
     
     
     <!-- 凭证匹配器 -->
     <bean id="credentialsMatcher"
-          class="com.supermarket.yun.platform.slowloris.service.security.filter.authc.credential.RetryLimitHashedCredentialsMatcher">
+          class="com.supermarket.yun.platform.slowloris.security.filter.authc.credential.RetryLimitHashedCredentialsMatcher">
         <constructor-arg ref="shiroCacheManager"/>
         <property name="maxRetryCount" value="${shiro.user.password.maxRetryCount}"/>
         <property name="showCaptchaRetryCount" value="${shiro.user.password.showCaptchaRetryCount}"/>
@@ -23,7 +23,7 @@
         <property name="storedCredentialsHexEncoded" value="${shiro.credentials.storedCredentialsHexEncoded}"/>
     </bean>
     <!-- realm -->
-    <bean id="userRealm" class="com.supermarket.yun.platform.slowloris.service.security.realm.UserRealm">
+    <bean id="userRealm" class="com.supermarket.yun.platform.slowloris.security.realm.UserRealm">
         <property name="credentialsMatcher" ref="credentialsMatcher"/>
         <!-- 用切面缓存代理了 此处就不缓存了 -->
         <property name="authenticationCachingEnabled" value="false"/>
@@ -56,7 +56,7 @@
         <property name="activeSessionsCacheName" value="${shiro.active.session.cacheName}"/>
     </bean> -->
     <!-- 自定义Session存储容器-->
-    <bean id="sessionDAO" class="com.supermarket.yun.platform.slowloris.service.security.session.CacheSessionDAO">
+    <bean id="sessionDAO" class="com.supermarket.yun.platform.slowloris.security.session.CacheSessionDAO">
         <property name="sessionIdGenerator" ref="sessionIdGenerator"/>
     </bean>
     
@@ -67,7 +67,7 @@
     </bean>-->
     
     <bean id="onlineSessionFactory"
-          class="com.supermarket.yun.platform.slowloris.service.security.session.OnlineSessionFactory"/>
+          class="com.supermarket.yun.platform.slowloris.security.session.OnlineSessionFactory"/>
     
     <!-- manager -->
     <!-- Remembered vs Authenticated http://www.ituring.com.cn/article/287 -->
@@ -81,7 +81,7 @@
     
     <!-- 会话管理器 -->
     <!--<bean id="sessionManager" class="com.supermarket.yun.platform.slowloris.service.security.session.OnlineWebSessionManager">-->
-    <bean id="sessionManager" class="com.supermarket.yun.platform.slowloris.service.security.session.SessionManager">
+    <bean id="sessionManager" class="com.supermarket.yun.platform.slowloris.security.session.SessionManager">
         <property name="globalSessionTimeout" value="${shiro.session.globalSessionTimeout}"></property>
         <property name="sessionFactory" ref="onlineSessionFactory"/>
         <property name="sessionDAO" ref="sessionDAO"/>
@@ -105,7 +105,7 @@
     <!-- filter -->
     <!--替换默认的form 验证过滤器-->
     <bean id="formAuthenticationFilter"
-          class="com.supermarket.yun.platform.slowloris.service.security.filter.authc.FormAuthenticationFilter">
+          class="com.supermarket.yun.platform.slowloris.security.filter.authc.FormAuthenticationFilter">
         <!--<property name="defaultSuccessUrl" value="${shiro.default.success.url}"/>
         <property name="adminDefaultSuccessUrl" value="${shiro.admin.default.success.url}"/>-->
         <property name="successUrl" value="${shiro.default.success.url}"/>
@@ -120,20 +120,20 @@
         <property name="redirectUrl" value="${shiro.logout.success.url}"/>
     </bean>
     <!--提取系统用户（User） 验证用户是否合法的过滤器（如是否删除了 是否锁定了） -->
-    <bean id="sysUserFilter" class="com.supermarket.yun.platform.slowloris.service.security.filter.user.SysUserFilter">
+    <bean id="sysUserFilter" class="com.supermarket.yun.platform.slowloris.security.filter.user.SysUserFilter">
         <property name="userLockedUrl" value="${shiro.user.locked.url}"/>
         <property name="userNotfoundUrl" value="${shiro.user.notfound.url}"/>
         <property name="userUnknownErrorUrl" value="${shiro.user.unknown.error.url}"/>
     </bean>
     <!-- 验证会话是否是强制退出等的filter -->
     <bean id="onlineSessionFilter"
-          class="com.supermarket.yun.platform.slowloris.service.security.filter.online.OnlineSessionFilter">
+          class="com.supermarket.yun.platform.slowloris.security.filter.online.OnlineSessionFilter">
         <property name="forceLogoutUrl" value="${shiro.user.force.logout.url}"/>
         <property name="sessionDAO" ref="sessionDAO"/>
     </bean>
     
     <bean id="jCaptchaValidateFilter"
-          class="com.supermarket.yun.platform.slowloris.service.security.filter.jcaptcha.JCaptchaValidateFilter">
+          class="com.supermarket.yun.platform.slowloris.security.filter.jcaptcha.JCaptchaValidateFilter">
         <property name="jcaptchaEbabled" value="${shiro.jcaptcha.enable}"/>
         <property name="jcaptchaParam" value="jcaptchaCode"/>
         <property name="jcapatchaErrorUrl" value="${shiro.jcaptcha.error.url}"/>

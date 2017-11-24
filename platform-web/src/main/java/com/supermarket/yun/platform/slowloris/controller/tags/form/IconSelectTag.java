@@ -1,8 +1,8 @@
 package com.supermarket.yun.platform.slowloris.controller.tags.form;
 
+import com.supermarket.yun.platform.slowloris.common.SysFunctions;
 import com.supermarket.yun.platform.slowloris.common.utils.SpringContextHolder;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
-import com.supermarket.yun.platform.slowloris.controller.common.SysFunctions;
 import com.supermarket.yun.platform.slowloris.controller.tags.html.manager.HtmlComponentManager;
 import org.springframework.web.servlet.tags.form.TagWriter;
 

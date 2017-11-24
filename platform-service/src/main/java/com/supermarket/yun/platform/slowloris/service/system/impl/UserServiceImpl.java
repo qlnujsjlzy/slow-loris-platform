@@ -2,13 +2,13 @@ package com.supermarket.yun.platform.slowloris.service.system.impl;
 
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.supermarket.yun.platform.slowloris.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
 import com.supermarket.yun.platform.slowloris.domain.system.User;
 import com.supermarket.yun.platform.slowloris.domain.system.UserOrganization;
 import com.supermarket.yun.platform.slowloris.domain.system.UserRole;
 import com.supermarket.yun.platform.slowloris.mapper.system.UserMapper;
-import com.supermarket.yun.platform.slowloris.service.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.service.system.IUserOrganizationService;
 import com.supermarket.yun.platform.slowloris.service.system.IUserRoleService;
 import com.supermarket.yun.platform.slowloris.service.system.IUserService;

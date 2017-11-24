@@ -2,9 +2,9 @@ package com.supermarket.yun.platform.slowloris.service.system.impl;
 
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.supermarket.yun.platform.slowloris.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.domain.system.Log;
 import com.supermarket.yun.platform.slowloris.mapper.system.LogMapper;
-import com.supermarket.yun.platform.slowloris.service.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.service.system.ILogService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

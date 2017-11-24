@@ -2,6 +2,7 @@ package com.supermarket.yun.platform.slowloris.controller.system;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializeFilter;
+import com.supermarket.yun.platform.slowloris.common.BaseController;
 import com.supermarket.yun.platform.slowloris.common.domain.AjaxJson;
 import com.supermarket.yun.platform.slowloris.common.domain.PageJson;
 import com.supermarket.yun.platform.slowloris.common.exception.FileNameLengthLimitExceededException;
@@ -12,10 +13,9 @@ import com.supermarket.yun.platform.slowloris.common.query.utils.QueryableConver
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
 import com.supermarket.yun.platform.slowloris.common.utils.MessageUtils;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
-import com.supermarket.yun.platform.slowloris.controller.common.BaseController;
 import com.supermarket.yun.platform.slowloris.domain.system.Attachment;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresMethodPermissions;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresMethodPermissions;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresPathPermission;
 import com.supermarket.yun.platform.slowloris.service.system.IAttachmentService;
 import org.apache.commons.fileupload.FileUploadBase;
 import org.springframework.beans.factory.annotation.Autowired;

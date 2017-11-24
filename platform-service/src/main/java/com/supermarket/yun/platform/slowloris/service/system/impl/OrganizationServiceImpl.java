@@ -1,8 +1,8 @@
 package com.supermarket.yun.platform.slowloris.service.system.impl;
 
+import com.supermarket.yun.platform.slowloris.common.impl.TreeCommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.domain.system.Organization;
 import com.supermarket.yun.platform.slowloris.mapper.system.OrganizationMapper;
-import com.supermarket.yun.platform.slowloris.service.common.impl.TreeCommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.service.system.IOrganizationService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

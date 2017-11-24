@@ -16,7 +16,7 @@ public class DefinitionUtils {
 
     public DefinitionUtils() {
         String dbType = CodeGenUtils.getDbType().toLowerCase();
-        definition = JaxbMapper.fromLocation("codegen/mapper/" + dbType + "_definition.xml", Definition.class);
+        definition = JaxbMapper.fromLocation("codegen/template/code/mapper/" + dbType + "_definition.xml", Definition.class);
     }
 
     public static DefinitionUtils getDefinitionUtils() {

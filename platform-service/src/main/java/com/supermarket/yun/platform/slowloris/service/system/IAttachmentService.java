@@ -1,7 +1,7 @@
 package com.supermarket.yun.platform.slowloris.service.system;
 
+import com.supermarket.yun.platform.slowloris.common.ICommonService;
 import com.supermarket.yun.platform.slowloris.domain.system.Attachment;
-import com.supermarket.yun.platform.slowloris.service.common.ICommonService;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,7 +1,7 @@
-package ${packageName}<#if moduleName?exists><#if moduleName!=''>.${moduleName}</#if></#if>.service;
+package ${packageName}<#if moduleName?exists>.service<#if moduleName!=''>.${moduleName}</#if></#if>;
 
 import com.supermarket.yun.platform.slowloris.service.common.ICommonService;
-import ${packageName}<#if moduleName?exists><#if moduleName!=''>.${moduleName}</#if></#if>.entity.${entityName?cap_first};
+import ${packageName}<#if moduleName?exists>.domain<#if moduleName!=''>.${moduleName}</#if></#if>.${entityName?cap_first};
 
 /**
 * @Title: ${functionName}

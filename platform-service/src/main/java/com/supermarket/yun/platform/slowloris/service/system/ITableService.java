@@ -1,11 +1,11 @@
 package com.supermarket.yun.platform.slowloris.service.system;
 
+import com.supermarket.yun.platform.slowloris.common.ICommonService;
 import com.supermarket.yun.platform.slowloris.common.exception.GenerationException;
+import com.supermarket.yun.platform.slowloris.domain.GeneratorInfo;
 import com.supermarket.yun.platform.slowloris.domain.common.DbTableInfo;
 import com.supermarket.yun.platform.slowloris.domain.system.Menu;
 import com.supermarket.yun.platform.slowloris.domain.system.Table;
-import com.supermarket.yun.platform.slowloris.service.common.ICommonService;
-import com.supermarket.yun.platform.slowloris.service.domain.GeneratorInfo;
 import freemarker.template.TemplateException;
 
 import java.io.IOException;

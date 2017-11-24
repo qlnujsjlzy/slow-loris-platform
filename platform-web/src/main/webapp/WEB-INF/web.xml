@@ -77,7 +77,7 @@
     <!-- 验证码过滤器需要放到Shiro之后 因为Shiro将包装HttpSession 如果不 可能造成两次的sesison id 不一样 -->
     <filter>
         <filter-name>JCaptchaFilter</filter-name>
-        <filter-class>com.supermarket.yun.platform.slowloris.service.security.filter.jcaptcha.JCaptchaFilter
+        <filter-class>com.supermarket.yun.platform.slowloris.security.filter.jcaptcha.JCaptchaFilter
         </filter-class>
         <async-supported>true</async-supported>
     </filter>

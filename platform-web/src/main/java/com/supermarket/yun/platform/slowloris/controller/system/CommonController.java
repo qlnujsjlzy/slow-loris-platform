@@ -1,7 +1,7 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
+import com.supermarket.yun.platform.slowloris.common.BaseController;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
-import com.supermarket.yun.platform.slowloris.controller.common.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

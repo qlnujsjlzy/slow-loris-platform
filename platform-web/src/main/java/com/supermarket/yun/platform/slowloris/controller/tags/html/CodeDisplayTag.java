@@ -1,8 +1,8 @@
 package com.supermarket.yun.platform.slowloris.controller.tags.html;
 
+import com.supermarket.yun.platform.slowloris.common.SysFunctions;
 import com.supermarket.yun.platform.slowloris.common.utils.SpringContextHolder;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
-import com.supermarket.yun.platform.slowloris.controller.common.SysFunctions;
 import com.supermarket.yun.platform.slowloris.controller.tags.html.manager.HtmlComponentManager;
 
 import java.util.HashMap;

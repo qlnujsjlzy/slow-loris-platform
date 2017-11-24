@@ -7,7 +7,7 @@ import com.supermarket.yun.platform.slowloris.common.utils.*;
 import com.supermarket.yun.platform.slowloris.domain.system.Menu;
 import com.supermarket.yun.platform.slowloris.domain.system.Role;
 import com.supermarket.yun.platform.slowloris.domain.system.User;
-import com.supermarket.yun.platform.slowloris.service.security.realm.UserRealm.Principal;
+import com.supermarket.yun.platform.slowloris.security.realm.UserRealm.Principal;
 import com.supermarket.yun.platform.slowloris.service.system.IMenuService;
 import com.supermarket.yun.platform.slowloris.service.system.IRoleService;
 import com.supermarket.yun.platform.slowloris.service.system.IUserService;

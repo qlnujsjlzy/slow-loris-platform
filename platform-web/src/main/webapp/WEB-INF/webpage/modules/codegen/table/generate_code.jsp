@@ -103,7 +103,7 @@
                 <input type="checkbox" value="IService" name="generatorKeys" checked="checked">IService</input>
                 <input type="checkbox" value="ServiceImpl" name="generatorKeys" checked="checked">ServiceImpl</input>
                 <input type="checkbox" value="Mapper" name="generatorKeys" checked="checked">Mapper</input>
-                <input type="checkbox" value="Entity" name="generatorKeys" checked="checked">Entity</input>
+                <input type="checkbox" value="Domain" name="generatorKeys" checked="checked">Domain</input>
                 <input type="checkbox" value="xmlMapper" name="generatorKeys" checked="checked">xmlMapper</input>
                 <input type="checkbox" value="viewList" name="generatorKeys" checked="checked">viewList</input>
                 <input type="checkbox" value="viewForm" name="generatorKeys" checked="checked">viewForm</input>

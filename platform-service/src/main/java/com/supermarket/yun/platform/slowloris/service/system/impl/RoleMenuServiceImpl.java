@@ -1,8 +1,8 @@
 package com.supermarket.yun.platform.slowloris.service.system.impl;
 
+import com.supermarket.yun.platform.slowloris.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.domain.system.RoleMenu;
 import com.supermarket.yun.platform.slowloris.mapper.system.RoleMenuMapper;
-import com.supermarket.yun.platform.slowloris.service.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.service.system.IRoleMenuService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

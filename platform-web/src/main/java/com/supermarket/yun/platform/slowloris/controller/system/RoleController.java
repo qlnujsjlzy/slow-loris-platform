@@ -1,13 +1,13 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
 import com.alibaba.fastjson.JSONArray;
+import com.supermarket.yun.platform.slowloris.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.common.domain.AjaxJson;
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
-import com.supermarket.yun.platform.slowloris.controller.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.domain.system.Menu;
 import com.supermarket.yun.platform.slowloris.domain.system.Role;
 import com.supermarket.yun.platform.slowloris.domain.system.RoleMenu;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresPathPermission;
 import com.supermarket.yun.platform.slowloris.service.system.IMenuService;
 import com.supermarket.yun.platform.slowloris.service.system.IRoleMenuService;
 import com.supermarket.yun.platform.slowloris.service.utils.UserUtils;

@@ -1,5 +1,6 @@
 package com.supermarket.yun.platform.slowloris.service.system.impl;
 
+import com.supermarket.yun.platform.slowloris.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.common.query.data.Page;
 import com.supermarket.yun.platform.slowloris.common.query.data.PageImpl;
 import com.supermarket.yun.platform.slowloris.common.query.data.PageRequest;
@@ -10,8 +11,7 @@ import com.supermarket.yun.platform.slowloris.common.utils.ServletUtils;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
 import com.supermarket.yun.platform.slowloris.domain.system.UserOnline;
 import com.supermarket.yun.platform.slowloris.mapper.system.UserOnlineMapper;
-import com.supermarket.yun.platform.slowloris.service.common.impl.CommonServiceImpl;
-import com.supermarket.yun.platform.slowloris.service.security.realm.UserRealm.Principal;
+import com.supermarket.yun.platform.slowloris.security.realm.UserRealm.Principal;
 import com.supermarket.yun.platform.slowloris.service.system.IUserOnlineService;
 import com.supermarket.yun.platform.slowloris.service.utils.UserUtils;
 import org.springframework.stereotype.Service;

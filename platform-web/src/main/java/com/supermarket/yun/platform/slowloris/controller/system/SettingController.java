@@ -1,9 +1,9 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
+import com.supermarket.yun.platform.slowloris.common.*;
 import com.supermarket.yun.platform.slowloris.common.domain.AjaxJson;
 import com.supermarket.yun.platform.slowloris.common.utils.MessageUtils;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
-import com.supermarket.yun.platform.slowloris.controller.common.*;
 import com.supermarket.yun.platform.slowloris.controller.utils.sms.HySmsSetting;
 import com.supermarket.yun.platform.slowloris.controller.utils.sms.data.SmsResult;
 import com.supermarket.yun.platform.slowloris.controller.utils.sms.data.SmsTemplate;

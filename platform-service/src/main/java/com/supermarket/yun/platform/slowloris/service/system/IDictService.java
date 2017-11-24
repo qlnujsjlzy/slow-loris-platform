@@ -1,7 +1,7 @@
 package com.supermarket.yun.platform.slowloris.service.system;
 
+import com.supermarket.yun.platform.slowloris.common.ICommonService;
 import com.supermarket.yun.platform.slowloris.domain.system.Dict;
-import com.supermarket.yun.platform.slowloris.service.common.ICommonService;
 
 import java.util.List;
 

@@ -23,8 +23,8 @@ public class ConfigXmlMap implements Serializable {
     List<GeneratorXmlMap> generatorXmpMapList;
 
     public static void main(String[] args) {
-        ConfigXmlMap xmlMap = JaxbMapper.fromLocation("codegen/mapper/code_generator.xml", ConfigXmlMap.class);
-        Definition definition = JaxbMapper.fromLocation("codegen/mapper/mysql_definition.xml", Definition.class);
+        ConfigXmlMap xmlMap = JaxbMapper.fromLocation("codegen/template/code/mapper/code_generator.xml", ConfigXmlMap.class);
+        Definition definition = JaxbMapper.fromLocation("codegen/template/code/mapper/mysql_definition.xml", Definition.class);
 
         System.out.println(JsonMapper.toJsonString(xmlMap));
     }

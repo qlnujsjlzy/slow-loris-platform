@@ -1,9 +1,9 @@
 package com.supermarket.yun.platform.slowloris.service.system.impl;
 
+import com.supermarket.yun.platform.slowloris.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
 import com.supermarket.yun.platform.slowloris.domain.system.Column;
 import com.supermarket.yun.platform.slowloris.mapper.system.ColumnMapper;
-import com.supermarket.yun.platform.slowloris.service.common.impl.CommonServiceImpl;
 import com.supermarket.yun.platform.slowloris.service.system.IColumnService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

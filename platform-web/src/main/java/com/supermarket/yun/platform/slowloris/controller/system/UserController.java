@@ -1,14 +1,14 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
+import com.supermarket.yun.platform.slowloris.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.common.domain.AjaxJson;
 import com.supermarket.yun.platform.slowloris.common.query.data.QueryRequest;
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
 import com.supermarket.yun.platform.slowloris.common.utils.LorisPropertiesUtil;
 import com.supermarket.yun.platform.slowloris.common.utils.MyBeanUtils;
 import com.supermarket.yun.platform.slowloris.common.utils.StringUtils;
-import com.supermarket.yun.platform.slowloris.controller.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.domain.system.*;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresPathPermission;
 import com.supermarket.yun.platform.slowloris.service.system.*;
 import com.supermarket.yun.platform.slowloris.service.utils.UserUtils;
 import org.springframework.beans.factory.annotation.Autowired;

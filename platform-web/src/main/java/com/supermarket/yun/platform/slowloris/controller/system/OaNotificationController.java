@@ -1,9 +1,9 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
 
-import com.supermarket.yun.platform.slowloris.controller.common.BaseCRUDController;
+import com.supermarket.yun.platform.slowloris.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.domain.system.OaNotification;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresPathPermission;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

@@ -12,8 +12,8 @@
                                   location="classpath:dbconfig.properties,classpath:loris.properties,classpath:shiro.properties"/>
     
     <!-- 自动扫描dao和service包(自动注入) -->
-    <context:component-scan base-package="com.supermarket.yun.platform.slowloris.service.system.*"/>
-    <context:component-scan base-package="com.supermarket.yun.platform.slowloris.dao.*"/>
+    <context:component-scan base-package="com.supermarket.yun.platform.slowloris.service"/>
+    <context:component-scan base-package="com.supermarket.yun.platform.slowloris.dao"/>
     
     
     <import resource="spring-config-mybatis.xml"/>

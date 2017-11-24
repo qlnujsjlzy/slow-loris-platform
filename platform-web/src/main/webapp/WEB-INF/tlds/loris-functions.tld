@@ -11,7 +11,7 @@
     <function>
         <description>获得后台配置前缀地址</description>
         <name>getAdminUrlPrefix</name>
-        <function-class>com.supermarket.yun.platform.slowloris.controller.common.SysFunctions</function-class>
+        <function-class>com.supermarket.yun.platform.slowloris.common.SysFunctions</function-class>
         <function-signature>java.lang.String getAdminUrlPrefix()</function-signature>
         <example>${fns:getAdminUrlPrefix()}</example>
     </function>
@@ -62,7 +62,7 @@
     <function>
         <description>获得样式</description>
         <name>getTheme</name>
-        <function-class>com.supermarket.yun.platform.slowloris.controller.common.SysFunctions</function-class>
+        <function-class>com.supermarket.yun.platform.slowloris.common.SysFunctions</function-class>
         <function-signature>java.lang.String getTheme()</function-signature>
         <example>${fns:getTheme()}</example>
     </function>

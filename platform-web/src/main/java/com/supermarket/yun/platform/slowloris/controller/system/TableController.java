@@ -1,18 +1,18 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
 import com.alibaba.fastjson.JSONObject;
+import com.supermarket.yun.platform.slowloris.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.common.domain.AjaxJson;
 import com.supermarket.yun.platform.slowloris.common.query.mapper.JsonMapper;
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
 import com.supermarket.yun.platform.slowloris.common.utils.*;
-import com.supermarket.yun.platform.slowloris.controller.common.BaseCRUDController;
+import com.supermarket.yun.platform.slowloris.domain.GeneratorInfo;
 import com.supermarket.yun.platform.slowloris.domain.common.DbTableInfo;
 import com.supermarket.yun.platform.slowloris.domain.system.Column;
 import com.supermarket.yun.platform.slowloris.domain.system.Menu;
 import com.supermarket.yun.platform.slowloris.domain.system.Scheme;
 import com.supermarket.yun.platform.slowloris.domain.system.Table;
-import com.supermarket.yun.platform.slowloris.service.domain.GeneratorInfo;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresPathPermission;
 import com.supermarket.yun.platform.slowloris.service.system.IColumnService;
 import com.supermarket.yun.platform.slowloris.service.system.IMenuService;
 import com.supermarket.yun.platform.slowloris.service.system.ISchemeService;

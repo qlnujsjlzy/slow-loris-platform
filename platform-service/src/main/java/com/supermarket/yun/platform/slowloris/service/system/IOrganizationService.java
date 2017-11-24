@@ -1,7 +1,7 @@
 package com.supermarket.yun.platform.slowloris.service.system;
 
+import com.supermarket.yun.platform.slowloris.common.ITreeCommonService;
 import com.supermarket.yun.platform.slowloris.domain.system.Organization;
-import com.supermarket.yun.platform.slowloris.service.common.ITreeCommonService;
 
 import java.util.List;
 

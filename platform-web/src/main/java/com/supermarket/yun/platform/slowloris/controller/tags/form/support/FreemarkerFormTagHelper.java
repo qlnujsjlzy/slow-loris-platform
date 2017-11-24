@@ -1,8 +1,8 @@
 package com.supermarket.yun.platform.slowloris.controller.tags.form.support;
 
+import com.supermarket.yun.platform.slowloris.common.SysFunctions;
 import com.supermarket.yun.platform.slowloris.common.utils.ObjectUtils;
 import com.supermarket.yun.platform.slowloris.common.utils.Reflections;
-import com.supermarket.yun.platform.slowloris.controller.common.SysFunctions;
 
 import javax.servlet.jsp.PageContext;
 import java.lang.reflect.Field;

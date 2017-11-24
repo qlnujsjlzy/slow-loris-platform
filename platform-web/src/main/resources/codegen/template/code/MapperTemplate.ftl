@@ -1,7 +1,7 @@
-package ${packageName}<#if moduleName?exists><#if moduleName!=''>.${moduleName}</#if></#if>.mapper;
+package ${packageName}<#if moduleName?exists>.mapper<#if moduleName!=''>.${moduleName}</#if></#if>;
 
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import ${packageName}<#if moduleName?exists><#if moduleName!=''>.${moduleName}</#if></#if>.entity.${entityName?cap_first};
+import ${packageName}<#if moduleName?exists>.domain<#if moduleName!=''>.${moduleName}</#if></#if>.${entityName?cap_first};
 
 /**
 * @Title: ${functionName}数据库控制层接口

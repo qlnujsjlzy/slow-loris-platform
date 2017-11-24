@@ -1,11 +1,11 @@
 package com.supermarket.yun.platform.slowloris.controller.system;
 
+import com.supermarket.yun.platform.slowloris.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.common.query.data.QueryRequest;
 import com.supermarket.yun.platform.slowloris.common.query.wrapper.EntityWrapper;
-import com.supermarket.yun.platform.slowloris.controller.common.BaseCRUDController;
 import com.supermarket.yun.platform.slowloris.domain.system.Dict;
 import com.supermarket.yun.platform.slowloris.domain.system.DictGroup;
-import com.supermarket.yun.platform.slowloris.service.security.annotation.RequiresPathPermission;
+import com.supermarket.yun.platform.slowloris.security.annotation.RequiresPathPermission;
 import com.supermarket.yun.platform.slowloris.service.system.IDictGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

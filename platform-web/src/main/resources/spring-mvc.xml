@@ -18,7 +18,7 @@
             location="classpath:loris.properties,classpath:upload.properties"/>
     <!-- 注解扫描的包 -->
     <!-- 开启controller注解支持 -->
-    <context:component-scan base-package="com.supermarket.yun.platform.slowloris.controller.system"
+    <context:component-scan base-package="com.supermarket.yun.platform.slowloris.controller"
                             use-default-filters="false">
         <context:include-filter type="annotation"
                                 expression="org.springframework.stereotype.Controller"/>
@@ -62,7 +62,7 @@
         <!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 -->
         <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
         <!-- 日志拦截器 -->
-        <bean class="com.supermarket.yun.platform.slowloris.controller.interceptor.LogInterceptor">
+        <bean class="com.supermarket.yun.platform.slowloris.interceptor.LogInterceptor">
             <property name="openAccessLog" value="${openAccessLog}"/>
         </bean>
         <mvc:interceptor>
@@ -72,7 +72,7 @@
             <!-- 需排除拦截的地址 -->
             <mvc:exclude-mapping path="/upload/**"/>
             
-            <bean class="com.supermarket.yun.platform.slowloris.controller.interceptor.EncodingInterceptor"/>
+            <bean class="com.supermarket.yun.platform.slowloris.interceptor.EncodingInterceptor"/>
         </mvc:interceptor>
         <!-- 安全验证拦截器 -->
         <mvc:interceptor>
@@ -82,13 +82,13 @@
             <!-- 需排除拦截的地址 -->
             <mvc:exclude-mapping path="/upload/**"/>
             
-            <bean class="com.supermarket.yun.platform.slowloris.controller.interceptor.PermissionInterceptorAdapter"/>
+            <bean class="com.supermarket.yun.platform.slowloris.interceptor.PermissionInterceptorAdapter"/>
         </mvc:interceptor>
     </mvc:interceptors>
     
     
     <!--异常处理-->
-    <bean class="com.supermarket.yun.platform.slowloris.controller.handler.DefaultExceptionHandler"/>
+    <bean class="com.supermarket.yun.platform.slowloris.handler.DefaultExceptionHandler"/>
     
     <!-- 国际化 -->
     <bean id="messageSource"
