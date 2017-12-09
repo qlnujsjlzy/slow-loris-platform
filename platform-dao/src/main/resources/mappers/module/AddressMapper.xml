@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supermarket.yun.platform.slowloris.mapper.module.AddressMapper">
+
+    <sql id="Base_Column_List">
+        t.id,
+        t.name,
+        t.phone,
+        t.province,
+        t.city,
+        t.region,
+        t.community_id,
+        t.community_name,
+        t.street,
+        t.is_default,
+        t.create_by,
+        t.create_time,
+        t.update_by,
+        t.update_time,
+        t.flag
+    </sql>
+
+</mapper>
