@@ -172,7 +172,7 @@
     
     <build>
         <defaultGoal>compile</defaultGoal>
-        <finalName>slow-loris-platform</finalName>
+        <finalName>platform</finalName>
         <!--解决不联网资源文件不能解析的问题-->
         <resources>
             <resource>

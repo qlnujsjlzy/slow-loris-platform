@@ -60,7 +60,7 @@
     </dependencies>
     
     <build>
-        <finalName>slow-loris-platform</finalName>
+        <finalName>platform</finalName>
         <defaultGoal>compile</defaultGoal>
         
         <!--解决不联网资源文件不能解析的问题-->
